@@ -1,0 +1,13 @@
+apsbd21420 bd en sql server
+
+recepcion_archivos.backup bd en postgres
+
+backup
+
+pg_dump -h localhost -p 5432 -U postgres -F c -b -v -f "C:\Users\sergio torrejon\Desktop\2020\aps\desarrollo\caaps.bd\recepcion_archivos.backup" recepcion_archivos
+
+restore
+
+pg_restore -h localhost -p 5432 -U postgres -d recepcion_archivos -v "C:\Users\sergio torrejon\Desktop\2020\aps\desarrollo\caaps.bd\recepcion_archivos.backup"
+
+C:\Program Files\PostgreSQL\12\bin>pg_restore -h localhost -p 5432 -U postgres -d recepcion_archivos -v "C:\Users\sergio torrejon\Desktop\2020\aps\desarrollo\caaps.bd\recepcion_archivos.backup"
